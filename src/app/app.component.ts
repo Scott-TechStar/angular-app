@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-app';
+  teamStatus = 'Join Scotts Team';
+  onJoinTeam(){
+    this.teamStatus= 'Welcome to Scotts Team';
+  }
 }
