@@ -1,4 +1,7 @@
 <h1>Welcome To Team Scott</h1>
+<label>Team Name</label>
+<input type="text" class="form-control" (input)="onUpdateTeamName($event)">
+<p>{{teamName}}</p>
 <div class="container ">
   <button class="btn btn-primary" {click}="onJoinTeam()">Join Team</button>
   <p>{{teamStatus}}</p>
