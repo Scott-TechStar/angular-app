@@ -9,10 +9,12 @@ export class AppComponent {
   title = 'angular-app';
   teamStatus = 'Join Scotts Team';
   teamName = "";
+  joinTeam = false;
 
 
   onJoinTeam(){
-    this.teamStatus= 'Welcome to Scotts Team';
+    this.joinTeam = true;
+    this.teamStatus= 'Welcome to Scott Hub!. Your team name is ' + this.teamName;
   }
   onUpdateTeamName(event:Event){
     this.teamName = (<HTMLInputElement>event.target).value;
