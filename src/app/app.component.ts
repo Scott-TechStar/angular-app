@@ -6,17 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-app';
-  teamStatus = 'Join Scotts Team';
-  teamName = "";
-  joinTeam = false;
 
-
-  onJoinTeam(){
-    this.joinTeam = true;
-    this.teamStatus= 'Welcome to Scott Hub!. Your team name is ' + this.teamName;
-  }
-  onUpdateTeamName(event:Event){
-    this.teamName = (<HTMLInputElement>event.target).value;
-  }
 }
